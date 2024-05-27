@@ -10,7 +10,8 @@ function createHotFile() {
     const hotFilePath = path.join(buildPath, 'hot');
     const port = 5173;
 
-    fs.writeFileSync(hotFilePath, 'http://[::1]:' + port);
+    // fs.writeFileSync(hotFilePath, 'http://[::1]:' + port);
+    fs.writeFileSync(hotFilePath, 'https://licalhost:' + port);
     console.log(`"hot" file created at ${hotFilePath}`);
 }
 
